@@ -2,10 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/One"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Level1">
+    tools:context=".OrderNumActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -14,25 +13,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/levelpage" />
+        app:srcCompat="@drawable/selectpage" />
 
     <Button
-        android:id="@+id/submit1"
+        android:id="@+id/submit2"
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#bc7300"
         android:text="Next"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/layout1"
         app:layout_constraintStart_toStartOf="@+id/layout1"
         app:layout_constraintTop_toBottomOf="@+id/layout1" />
 
     <TextView
-        android:id="@+id/Two"
+        android:id="@+id/level2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Level 1"
+        android:text="Level"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,54 +40,55 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ttl_questions"
+        android:id="@+id/questionindex2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Question"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/Two"
-        app:layout_constraintStart_toStartOf="@+id/Two"
-        app:layout_constraintTop_toBottomOf="@+id/Two" />
+        app:layout_constraintEnd_toEndOf="@+id/level2"
+        app:layout_constraintStart_toStartOf="@+id/level2"
+        app:layout_constraintTop_toBottomOf="@+id/level2" />
 
     <TextView
-        android:id="@+id/timelimit"
+        android:id="@+id/timer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="TextView"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/ttl_questions"
-        app:layout_constraintStart_toStartOf="@+id/ttl_questions"
-        app:layout_constraintTop_toBottomOf="@+id/ttl_questions" />
+        app:layout_constraintEnd_toEndOf="@+id/questionindex2"
+        app:layout_constraintStart_toStartOf="@+id/questionindex2"
+        app:layout_constraintTop_toBottomOf="@+id/questionindex2" />
 
     <TextView
-        android:id="@+id/question1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:id="@+id/question2"
+        android:layout_width="325dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="48dp"
         android:text="6 + 6 "
-        android:textSize="48sp"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/timelimit"
-        app:layout_constraintStart_toStartOf="@+id/timelimit"
-        app:layout_constraintTop_toBottomOf="@+id/timelimit" />
+        app:layout_constraintEnd_toEndOf="@+id/timer2"
+        app:layout_constraintStart_toStartOf="@+id/timer2"
+        app:layout_constraintTop_toBottomOf="@+id/timer2" />
 
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_width="400dp"
-        android:layout_height="150dp"
+        android:layout_width="401dp"
+        android:layout_height="211dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/question1"
-        app:layout_constraintStart_toStartOf="@+id/question1"
-        app:layout_constraintTop_toBottomOf="@+id/question1">
+
+        app:layout_constraintEnd_toEndOf="@+id/question2"
+        app:layout_constraintStart_toStartOf="@+id/question2"
+        app:layout_constraintTop_toBottomOf="@+id/question2">
+
 
         <LinearLayout
             android:id="@+id/layout2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="190dp"
+            android:layout_height="160dp"
             android:layout_margin="0dp"
             android:gravity="center"
             android:orientation="vertical"
@@ -96,26 +97,29 @@
             app:layout_constraintStart_toStartOf="@+id/layout1"
             app:layout_constraintTop_toTopOf="@+id/layout1">
 
-            <Button
-                android:id="@+id/option11"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#d3a04f"
-                android:text="Button" />
 
             <Button
-                android:id="@+id/option31"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:backgroundTint="#d3a04f"
-                android:text="Button" />
+                android:id="@+id/Option1"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#EF9403"
+                android:text="Button"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Option3"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#EF9403"
+                android:text="Button"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="190dp"
+            android:layout_height="160dp"
             android:layout_margin="0dp"
             android:gravity="center"
             android:orientation="vertical"
@@ -124,20 +128,16 @@
             app:layout_constraintTop_toTopOf="@+id/layout1">
 
             <Button
-                android:id="@+id/option21"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
+                android:id="@+id/Option2"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:layout_margin="15dp"
-                android:backgroundTint="#d3a04f"
+                android:backgroundTint="#EF9403"
                 android:foregroundGravity="center_horizontal"
-                android:text="Button" />
+                android:text="Button"
+                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/option41"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:backgroundTint="#d3a04f"
-                android:text="Button" />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
